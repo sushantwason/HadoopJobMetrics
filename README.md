@@ -12,7 +12,7 @@ The Framework now supports metrics generation report (weekly/daily) which can be
 Current Implementation
 ----------------------
 
-1. Analysing Hadoop Jobs on Cerebro and metrics generation
+1. Analysing Hadoop Jobs  and metrics generation
 
 
 Future Work
