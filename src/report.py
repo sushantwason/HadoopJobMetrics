@@ -4,7 +4,7 @@ import Utilities
 CONFIG_FILE='../conf/queries.conf'
 
 class ReportGenerator(object):
-    def __init__(self, dsn='cerebro_job_metadata_dsn'):
+    def __init__(self, dsn='job_metadata_dsn'):
 	self.generator=Report(dsn)
 	self.queryDict={}
 
@@ -43,7 +43,7 @@ class ReportGenerator(object):
 
 
 class Report(object):
-    def __init__(self, dsn='cerebro_job_metadata_dsn'):
+    def __init__(self, dsn='job_metadata_dsn'):
 	self.queryGen=MetadataConnector.QueryGenerator(dsn)
 	
 
