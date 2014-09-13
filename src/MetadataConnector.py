@@ -3,7 +3,7 @@ import MySQLdb
 
 
 class QueryGenerator(object):
-    def __init__(self, dsn='cerebro_job_metadata_dsn'):
+    def __init__(self, dsn='job_metadata_dsn'):
 	self.queryGen=MetadataConnect(dsn)
     
     def Execute(self,query):
@@ -15,7 +15,7 @@ class QueryGenerator(object):
 
 
 class MetadataConnect(object):
-    def __init__(self, dsn='cerebro_job_metadata_dsn'):
+    def __init__(self, dsn='ob_metadata_dsn'):
         self.dsn=dsn
 	self.host="hostname"
         self.user="user"
